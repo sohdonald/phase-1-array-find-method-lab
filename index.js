@@ -65,6 +65,7 @@ function superbowlWin(recHolder) {
     ];
 
     const isWin = recHolder.find(record => record.result === "W");
+    // going to record object list, then looks for the result that === "W"
 
     return isWin ? isWin.year : undefined;
     // note that isWin is the condition we are looking for
