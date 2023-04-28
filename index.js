@@ -2,6 +2,7 @@
 
 function superbowlWin(recHolder) {
     // recHolder is placeholder for object list
+    // record is the object list
     const record = [
         { year: "2015", result: "W"},
         { year: "2014", result: "N/A"},
@@ -66,6 +67,7 @@ function superbowlWin(recHolder) {
     const isWin = recHolder.find(record => record.result === "W");
 
     return isWin ? isWin.year : undefined;
+    // note that isWin is the condition we are looking for
 }
         
 //console.log(superbowlWin(record));
